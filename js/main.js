@@ -277,35 +277,22 @@ function readMore(num) {
 	}
 } 
 
-
-let apiKey = "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";
-
 function sendMail() {
+	var data = {
+    name: $("#userName").val(),
+    email: $("#userEmail").val(),
+    msg: $("#userMessage").val()
+	};
+
+
+$.ajax({
+    type: "POST",
+    url: "email.php",
+    data: data,
+    success: function(){
+        console.log("Worked")
+    }
 	
 
-	let userEmail = document.getElementById('userEmail').value
-	let userMessage = document.getElementById('userMessage').value
-	let userName = document.getElementById('userName').value
-	$.ajax({
-      type: 'POST',
-      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-      data: {
-        'key': apiKey,
-        'message': {
-          'from_email': userEmail,
-          'to': [
-              {
-                'email': 'mahd18@meet.mit.edu',
-                'name': 'Mahd',
-                'type': 'to'
-              }
-            ],
-          'autotext': 'true',
-          'subject': userMessage,
-          'html': userMessage
-        }
-      }
-     }).done(function(response) {
-       console.log(response); // if you're into that sorta thing
-     });
+	});
 }
