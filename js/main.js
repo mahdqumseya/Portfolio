@@ -34,7 +34,7 @@ var frontendData = {
     ],
     datasets: [
         {
-            data: [6,4,2],
+            data: [7,9,3],
             backgroundColor: [
 				"#8463FF",
 				"#FF6384",
@@ -73,7 +73,7 @@ var softskillsData = {
     ],
     datasets: [
         {
-            data: [8,6,6,],
+            data: [8,6,8,],
             backgroundColor: [
 				"#8463FF",
 				"#FF6384",
@@ -239,3 +239,73 @@ $('.down-arrow').hover(()=> {
 
 
 })
+
+function readMore(num) {
+	/* Checks to see which card */
+
+	if (num === 1){ 
+		var moreText = document.getElementById("more1");
+		var btnText = document.getElementById("myBtn1");
+		var dots = document.getElementById("dots1");
+	}
+	else if (num === 2){
+		var moreText = document.getElementById("more2");
+		var btnText = document.getElementById("myBtn2");
+		var dots = document.getElementById("dots2");
+	}
+	else {
+		var moreText = document.getElementById("more3")
+		var btnText = document.getElementById("myBtn3");
+		var dots = document.getElementById("dots3");
+
+	}
+
+
+	
+	
+
+	if (dots.style.display === "none") {
+    	dots.style.display = "inline";
+    	btnText.innerHTML = "Read more";
+    	moreText.style.display = "none";
+	}
+
+	else {
+  		dots.style.display = "none";
+    	btnText.innerHTML = "Read less";
+    	moreText.style.display = "inline";
+	}
+} 
+
+
+let apiKey = "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";
+
+function sendMail() {
+	
+
+	let userEmail = document.getElementById('userEmail').value
+	let userMessage = document.getElementById('userMessage').value
+	let userName = document.getElementById('userName').value
+	$.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': apiKey,
+        'message': {
+          'from_email': userEmail,
+          'to': [
+              {
+                'email': 'mahd18@meet.mit.edu',
+                'name': 'Mahd',
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': userMessage,
+          'html': userMessage
+        }
+      }
+     }).done(function(response) {
+       console.log(response); // if you're into that sorta thing
+     });
+}

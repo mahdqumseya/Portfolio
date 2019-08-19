@@ -220,8 +220,20 @@ color: #F97300 !important;
 }
 
 
+#more1 , #more2 , #more3 {
+	display: none;
+}
 
 
+#myBtn1 , #myBtn2, #myBtn3 {
+	background-color: #555555;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+}
+#myBtn1:hover , #myBtn2:hover , #myBtn:hover  {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
 /*skills style*/
 
 #bar-chart {
@@ -239,10 +251,11 @@ color: #F97300 !important;
 }
 .skills .card{
 	box-shadow: 0 0 20px #ccc;
+
 }
 .skills .card img{
 	width: 100%;
-	height: 12em;
+	height: 14em;
 }
 @media only screen and (max-width: 768px){
  .awards .item img{
