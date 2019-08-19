@@ -8,13 +8,7 @@ $(document).ready(function(){
   
  })
 
- $(".btn").click(function(){
-	 console.log('clicked')
-	$("body,html").animate({
-		scrollTop:$("#" + $(this).data('value')).offset().top
-	},1000)
- 
-})
+
 
 //Getting canvas ID
 var frontendCanvas = document.getElementById("frontend-chart");
