@@ -286,7 +286,7 @@ function sendMail() {
 	};
 
 
-$.ajax({
+	$.ajax({
     type: "POST",
     url: "email.php",
     data: data,
