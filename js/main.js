@@ -278,6 +278,7 @@ function readMore(num) {
 } 
 
 function sendMail() {
+	console.log("Sending...")
 	var data = {
     name: $("#userName").val(),
     email: $("#userEmail").val(),
