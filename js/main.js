@@ -271,23 +271,4 @@ function readMore(num) {
 	}
 } 
 
-function sendMail() {
-	console.log("Sending...")
-	var data = {
-    name: $("#userName").val(),
-    email: $("#userEmail").val(),
-    msg: $("#userMessage").val()
-	};
 
-
-	$.ajax({
-    type: "POST",
-    url: "email.php",
-    data: data,
-    success: function(){
-        console.log("Worked")
-    }
-	
-
-	});
-}
