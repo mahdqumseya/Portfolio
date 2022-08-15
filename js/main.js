@@ -40,9 +40,9 @@ var frontendData = {
 // backend data 
 var backendData = {
     labels: [
-		"Flask",
-		"Django",
-		"SQLAlchemy",
+		"Relationship Building",
+		"SaaS",
+		"Negotiation Skills",
 		
     ],
     datasets: [
