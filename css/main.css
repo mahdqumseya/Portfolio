@@ -55,7 +55,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: rgba(244, 244, 244, 0.79);
+	background: #BBBBBB;
 }
 .description{
     position: absolute;
@@ -76,7 +76,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 .description button{
 	margin-top: 250px;
 	border:1px  solid #F97300;
-	background:#F97300;
+	background:#BBBBBB;
 	color:#fff;
 	position: absolute;
 }
