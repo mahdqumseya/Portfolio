@@ -65,7 +65,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 }
 .description h1{
-	color:#F97300 ;
+	color:#BBBBBB ;
 }
 .description p{
 	color:#666;
@@ -76,7 +76,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 .description button{
 	margin-top: 250px;
 	border:1px  solid #F97300;
-	background:#BBBBBB;
+	background:#F97300;
 	color:#fff;
 	position: absolute;
 }
