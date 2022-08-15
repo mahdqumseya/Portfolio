@@ -62,7 +62,7 @@ var softskillsData = {
 		"Git",
 		
 		"Heroku",
-		"Wix"
+		"Wix2"
 		
     ],
     datasets: [
