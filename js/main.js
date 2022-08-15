@@ -42,7 +42,7 @@ var backendData = {
     labels: [
 		"Relationship Building",
 		"SaaS",
-		"Negotiation Skills",
+		"Negotiation Skills"
 		
     ],
     datasets: [
