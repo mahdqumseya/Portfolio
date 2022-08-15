@@ -11,16 +11,17 @@ html,h1,h2,h3,h4,h5,h6,a{
 	font-family: "Raleway";
 }
 .navbar{
-	background: #BBBBBB;
+	/* background:#F97300; */
+	
 
 	
-  
+  background: rgba(249, 115, 0, 0.5);
 }
 
 .navbar:hover{
 >
 	/* opacity: 1; */
-	background:#BBBBBB;
+	background: rgba(249, 115, 0, 1);
 }
 .nav-link , .navbar-brand{
 	color: #f4f4f4;
@@ -55,7 +56,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 	min-width: 100%;
 	left: 0;
 	top: 0;
-	background: #BBBBBB;
+	background: rgba(244, 244, 244, 0.79);
 }
 .description{
     position: absolute;
@@ -65,7 +66,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 
 }
 .description h1{
-	color:#F97300;
+	color:#F97300 ;
 }
 .description p{
 	color:#666;
@@ -407,7 +408,6 @@ color: #F97300 !important;
 	width: 10px;
 	background-color: #F5F5F5;
 }
-
 -webkit-scrollbar-thumb
 {
 	border-radius: 10px;
